@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="SefSensin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gD2-9l-zCA">
+                        <rect key="frame" x="20" y="12" width="287" height="126"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LPi-bE-rCU">
+                                <rect key="frame" x="187" y="14" width="146" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="HS8-Zg-5Cb"/>
+                                    <constraint firstAttribute="width" constant="146" id="SdG-ZB-zIB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fas Usulü " lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFz-xL-rvI">
+                                <rect key="frame" x="8" y="0.0" width="157" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="0Ru-Hz-2ia"/>
+                                    <constraint firstAttribute="height" constant="80" id="gNx-5J-rKh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hqw-kG-b2w">
+                                <rect key="frame" x="8" y="97.666666666666671" width="150" height="20.333333333333329"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stopwatch" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Z5m-OO-dya">
+                                        <rect key="frame" x="0.0" y="-0.66666666666666785" width="19.666666666666668" height="20.666666666666668"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45 dk." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEz-dd-Uex">
+                                        <rect key="frame" x="29.666666666666668" y="0.0" width="35.666666666666657" height="20.333333333333332"/>
+                                        <color key="tintColor" red="0.7496904902" green="0.94324100379999998" blue="0.77992605029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wMY-gF-3Da">
+                                        <rect key="frame" x="75.333333333333329" y="-0.33333333333333215" width="16.666666666666671" height="19.999999999999996"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="325 kcal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVW-51-e73">
+                                        <rect key="frame" x="102" y="0.0" width="48" height="20.333333333333332"/>
+                                        <color key="tintColor" red="0.7496904902" green="0.94324100379999998" blue="0.77992605029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94251185660000003" green="0.96137017010000003" blue="0.93597847219999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OFz-xL-rvI" firstAttribute="top" secondItem="gD2-9l-zCA" secondAttribute="top" id="6gb-XR-QxR"/>
+                            <constraint firstAttribute="bottom" secondItem="hqw-kG-b2w" secondAttribute="bottom" constant="8" id="GZR-tH-EKA"/>
+                            <constraint firstItem="LPi-bE-rCU" firstAttribute="top" secondItem="gD2-9l-zCA" secondAttribute="top" constant="14" id="Gud-0i-2Dh"/>
+                            <constraint firstItem="hqw-kG-b2w" firstAttribute="top" secondItem="OFz-xL-rvI" secondAttribute="bottom" constant="17.670000000000002" id="Gv1-vn-h4g"/>
+                            <constraint firstAttribute="trailing" secondItem="LPi-bE-rCU" secondAttribute="trailing" constant="-46" id="eLy-Au-RSE"/>
+                            <constraint firstAttribute="bottom" secondItem="LPi-bE-rCU" secondAttribute="bottom" constant="14" id="qFN-0u-4zY"/>
+                            <constraint firstItem="OFz-xL-rvI" firstAttribute="leading" secondItem="gD2-9l-zCA" secondAttribute="leading" constant="8" id="uth-gO-t51"/>
+                            <constraint firstItem="hqw-kG-b2w" firstAttribute="leading" secondItem="gD2-9l-zCA" secondAttribute="leading" constant="8" id="ype-gA-GnH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gD2-9l-zCA" secondAttribute="bottom" constant="12" id="3xI-fY-yvz"/>
+                    <constraint firstAttribute="trailing" secondItem="gD2-9l-zCA" secondAttribute="trailing" constant="44" id="Vyb-v3-8sP"/>
+                    <constraint firstItem="gD2-9l-zCA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="lqS-89-R9t"/>
+                    <constraint firstItem="gD2-9l-zCA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="pAZ-5F-GX8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="kcalLabel" destination="nVW-51-e73" id="hyJ-sF-VS6"/>
+                <outlet property="minLabel" destination="zEz-dd-Uex" id="7q6-4Z-64I"/>
+                <outlet property="searchFoodImage" destination="LPi-bE-rCU" id="DNY-s7-Rhg"/>
+                <outlet property="searchFoodNameLabel" destination="OFz-xL-rvI" id="eSb-eA-A6F"/>
+                <outlet property="searchView" destination="gD2-9l-zCA" id="hpB-Er-cT6"/>
+            </connections>
+            <point key="canvasLocation" x="55.725190839694655" y="37.323943661971832"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="flame" catalog="system" width="106" height="128"/>
+        <image name="stopwatch" catalog="system" width="121" height="128"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
