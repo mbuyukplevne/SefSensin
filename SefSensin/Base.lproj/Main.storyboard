@@ -296,21 +296,21 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="VCm-hQ-qRy">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="VCm-hQ-qRy">
                                         <rect key="frame" x="8" y="121" width="359" height="41"/>
-                                        <color key="backgroundColor" red="0.94027765546965347" green="0.98518386994949492" blue="0.9331703649984302" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.94251185660000003" green="0.96137017010000003" blue="0.93597847219999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="WW9-nE-de0"/>
                                         </constraints>
                                         <segments>
-                                            <segment title="Hepsi"/>
-                                            <segment title="Salata"/>
-                                            <segment title="Pizza"/>
-                                            <segment title="Sebze"/>
-                                            <segment title="Tatlı"/>
-                                            <segment title="Çorba"/>
+                                            <segment title="" image="food-dinner-icon-29"/>
+                                            <segment title="" image="meatball-food-icon-29"/>
+                                            <segment title="" image="cooking-dough-icon-29"/>
+                                            <segment title="" image="ccc"/>
+                                            <segment title="" image="cake-slice-icon-29"/>
+                                            <segment title="" image="soup-cup-and-soup-icon-29"/>
                                         </segments>
-                                        <color key="selectedSegmentTintColor" systemColor="systemGray6Color"/>
+                                        <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="selectSegmented:" destination="xhT-Xz-cfg" eventType="valueChanged" id="0Sz-R7-VN0"/>
                                         </connections>
@@ -622,11 +622,17 @@
     </scenes>
     <resources>
         <image name="aboutBG" width="3456" height="6912"/>
+        <image name="cake-slice-icon-29" width="29" height="29"/>
+        <image name="ccc" width="29" height="29"/>
+        <image name="cooking-dough-icon-29" width="29" height="29"/>
         <image name="cooktop" catalog="system" width="128" height="96"/>
         <image name="email" width="600" height="600"/>
         <image name="flame" catalog="system" width="106" height="128"/>
+        <image name="food-dinner-icon-29" width="29" height="29"/>
         <image name="frying.pan" catalog="system" width="128" height="81"/>
         <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="meatball-food-icon-29" width="29" height="29"/>
+        <image name="soup-cup-and-soup-icon-29" width="29" height="29"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

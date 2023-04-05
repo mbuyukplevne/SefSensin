@@ -136,7 +136,6 @@ extension SearchViewController: UITableViewDelegate {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController") as! RecipeDetailViewController
         vc.viewModel = choosen
         navigationController?.pushViewController(vc, animated: true)
-        let backButtonItem = UIBarButtonItem(image: <#T##UIImage?#>, style: <#T##UIBarButtonItem.Style#>, target: <#T##Any?#>, action: <#T##Selector?#>)
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationItem.backButtonDisplayMode = .minimal
         tabBarController?.tabBar.isHidden = true
