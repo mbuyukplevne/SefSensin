@@ -10,6 +10,7 @@
 		2E096AEB29DB6EA900A37309 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E096AEA29DB6EA900A37309 /* GoogleService-Info.plist */; };
 		2E11FD6F29DC2B9E000C27C6 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2E11FD6E29DC2B9E000C27C6 /* FirebaseDatabase */; };
 		2E11FD7129DC2B9E000C27C6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2E11FD7029DC2B9E000C27C6 /* FirebaseStorage */; };
+		2E1B261929DD565D007348DC /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B261829DD565D007348DC /* Gradient.swift */; };
 		2E234B1529CEDB3D00D63F18 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E234B1329CEDB3D00D63F18 /* SearchTableViewCell.swift */; };
 		2E234B1629CEDB3D00D63F18 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E234B1429CEDB3D00D63F18 /* SearchTableViewCell.xib */; };
 		2E36DE8329CC330700926B38 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DE8229CC330700926B38 /* RecipeDetailViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		2E096AEA29DB6EA900A37309 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E1B261829DD565D007348DC /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		2E234B1329CEDB3D00D63F18 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		2E234B1429CEDB3D00D63F18 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		2E36DE8229CC330700926B38 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				2E6CA8C429CC9F7100C3C4BC /* Extension.swift */,
+				2E1B261829DD565D007348DC /* Gradient.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				2E6CA8C529CC9F7100C3C4BC /* Extension.swift in Sources */,
 				2E9F11B829AF9EC200AE5A8E /* FeedbackViewController.swift in Sources */,
 				2E9A08EC29AE1A500074DA3B /* WebServiceModel.swift in Sources */,
+				2E1B261929DD565D007348DC /* Gradient.swift in Sources */,
 				2EA4A0D729ADEBEC009A75C3 /* SettingsViewController.swift in Sources */,
 				2E9F11A529AF569300AE5A8E /* SettingsModel.swift in Sources */,
 				2E9F11A729AF58FF00AE5A8E /* SettingsViewModel.swift in Sources */,

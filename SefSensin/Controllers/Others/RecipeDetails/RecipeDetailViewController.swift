@@ -34,7 +34,6 @@ class RecipeDetailViewController: UIViewController {
     private func setup() {
         configure(model: viewModel!)
         selectSegmented.selectedSegmentIndex = 0
-        directions.layer.cornerRadius = 20
         directions.text = viewModel?.recipeIngredients.joined(separator: "\n\n")
         desingableView.translatesAutoresizingMaskIntoConstraints = false
         desingableView.layer.cornerRadius = 20

@@ -121,6 +121,7 @@ extension SearchViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.identifier, for: indexPath) as! SearchTableViewCell
         let recipe = filteredRecipes[indexPath.row]
         cell.configure(model: recipe)
+        cell.selectionStyle = .none
         return cell
     }
 }
@@ -135,6 +136,9 @@ extension SearchViewController: UITableViewDelegate {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController") as! RecipeDetailViewController
         vc.viewModel = choosen
         navigationController?.pushViewController(vc, animated: true)
+        let backButtonItem = UIBarButtonItem(image: <#T##UIImage?#>, style: <#T##UIBarButtonItem.Style#>, target: <#T##Any?#>, action: <#T##Selector?#>)
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationItem.backButtonDisplayMode = .minimal
         tabBarController?.tabBar.isHidden = true
     }
 }
@@ -157,13 +161,13 @@ extension SearchViewController: UISearchBarDelegate {
         tableView.reloadData()
     }
 
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.text = ""
-        filteredRecipes = data.kitchens.flatMap({$0.recipes})
-        filteredRecipes.shuffle()
-        tableView.reloadData()
-        segmentedControl.selectedSegmentIndex = 0
-    }
+//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+//        searchBar.text = ""
+//        filteredRecipes = data.kitchens.flatMap({$0.recipes})
+//        filteredRecipes.shuffle()
+//        tableView.reloadData()
+//        segmentedControl.selectedSegmentIndex = 0
+//    }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()

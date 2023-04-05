@@ -28,6 +28,7 @@ class RecipeListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.tabBar.isHidden = true
+        self.navigationController?.navigationBar.tintColor = .systemBlue
     }
     
     // MARK: - TableView Setup
@@ -63,6 +64,8 @@ extension RecipeListViewController: UICollectionViewDelegate {
         let vc = storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController") as! RecipeDetailViewController
         vc.viewModel = recipeListViewModel?[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationItem.backButtonDisplayMode = .minimal
+        self.navigationController?.navigationBar.tintColor = .white
         tabBarController?.tabBar.isHidden = true
     }
 }
