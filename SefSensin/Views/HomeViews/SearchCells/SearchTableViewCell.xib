@@ -24,7 +24,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LPi-bE-rCU">
                                 <rect key="frame" x="-21" y="14" width="148" height="98"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="148" id="hqU-dm-OEg"/>
                                     <constraint firstAttribute="height" constant="98" id="rKr-0L-2Yf"/>
                                 </constraints>
                             </imageView>
@@ -78,7 +77,6 @@
                             <constraint firstItem="OFz-xL-rvI" firstAttribute="leading" secondItem="LPi-bE-rCU" secondAttribute="trailing" constant="21" id="DOl-5V-O73"/>
                             <constraint firstAttribute="bottom" secondItem="LPi-bE-rCU" secondAttribute="bottom" constant="14" id="Fz1-s2-oM4"/>
                             <constraint firstItem="OFz-xL-rvI" firstAttribute="top" secondItem="gD2-9l-zCA" secondAttribute="top" constant="14" id="LF0-0h-Yxs"/>
-                            <constraint firstAttribute="width" constant="308" id="PSa-kG-h56"/>
                             <constraint firstItem="LPi-bE-rCU" firstAttribute="top" secondItem="gD2-9l-zCA" secondAttribute="top" constant="14" id="PhP-Qf-wGB"/>
                             <constraint firstAttribute="height" constant="126" id="xOE-1y-kUz"/>
                             <constraint firstItem="LPi-bE-rCU" firstAttribute="leading" secondItem="gD2-9l-zCA" secondAttribute="leading" constant="-21" id="ykn-HL-go0"/>

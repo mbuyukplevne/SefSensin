@@ -165,7 +165,6 @@
                                 <color key="backgroundColor" red="0.85855668780000005" green="0.90722304580000002" blue="0.85214895010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="0ld-Le-HNO"/>
-                                    <constraint firstAttribute="width" constant="361" id="1th-CF-KZ1"/>
                                     <constraint firstAttribute="trailing" secondItem="ElO-Dq-t44" secondAttribute="trailing" constant="92" id="8VB-6Q-2HZ"/>
                                     <constraint firstItem="ElO-Dq-t44" firstAttribute="top" secondItem="BWH-Z0-4SE" secondAttribute="top" constant="9" id="FYC-Ct-ZgK"/>
                                     <constraint firstAttribute="bottom" secondItem="VZT-mO-Rw5" secondAttribute="bottom" constant="47" id="MSY-v3-Qa3"/>
@@ -178,15 +177,10 @@
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k3K-C0-bcH" customClass="GradientImageView" customModule="SefSensin" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="257"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="257" id="SWg-lT-DdC"/>
-                                    <constraint firstAttribute="width" constant="375" id="gZS-sF-3RV"/>
-                                </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" editable="NO" text="sdsassadsadasdsddds" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEd-Jg-bvS">
                                 <rect key="frame" x="16" y="430" width="343" height="348"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="OgG-6q-e3B"/>
                                     <constraint firstAttribute="height" constant="348" id="pj1-Mq-I4Y"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -211,19 +205,19 @@
                         <viewLayoutGuide key="safeArea" id="qze-VG-C89"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="k3K-C0-bcH" firstAttribute="top" secondItem="0pu-UI-CVB" secondAttribute="top" id="5b1-Mf-A3j"/>
+                            <constraint firstItem="k3K-C0-bcH" firstAttribute="leading" secondItem="qze-VG-C89" secondAttribute="leading" id="6C9-5O-rGL"/>
                             <constraint firstItem="PEd-Jg-bvS" firstAttribute="bottom" secondItem="qze-VG-C89" secondAttribute="bottom" id="Cob-Wp-2cy"/>
+                            <constraint firstItem="BWH-Z0-4SE" firstAttribute="top" secondItem="k3K-C0-bcH" secondAttribute="bottom" constant="8" symbolic="YES" id="E3y-13-jVx"/>
                             <constraint firstItem="qze-VG-C89" firstAttribute="trailing" secondItem="PEd-Jg-bvS" secondAttribute="trailing" constant="16" id="En3-4U-nfd"/>
                             <constraint firstItem="qze-VG-C89" firstAttribute="trailing" secondItem="BWH-Z0-4SE" secondAttribute="trailing" constant="7" id="Hvr-Us-88S"/>
-                            <constraint firstItem="k3K-C0-bcH" firstAttribute="trailing" secondItem="qze-VG-C89" secondAttribute="trailing" id="JoN-EK-UGN"/>
                             <constraint firstItem="PEd-Jg-bvS" firstAttribute="leading" secondItem="qze-VG-C89" secondAttribute="leading" constant="16" id="R5Y-wi-CRc"/>
                             <constraint firstItem="Yqb-tD-aL8" firstAttribute="leading" secondItem="qze-VG-C89" secondAttribute="leading" constant="16" id="TSL-yi-AMK"/>
                             <constraint firstItem="BWH-Z0-4SE" firstAttribute="leading" secondItem="qze-VG-C89" secondAttribute="leading" constant="7" id="gGa-FU-J50"/>
-                            <constraint firstItem="k3K-C0-bcH" firstAttribute="leading" secondItem="qze-VG-C89" secondAttribute="leading" id="mOj-Se-UwF"/>
                             <constraint firstItem="Yqb-tD-aL8" firstAttribute="top" secondItem="BWH-Z0-4SE" secondAttribute="bottom" constant="8" symbolic="YES" id="ulx-No-1wF"/>
                             <constraint firstItem="qze-VG-C89" firstAttribute="trailing" secondItem="Yqb-tD-aL8" secondAttribute="trailing" constant="16" id="uth-AR-v0e"/>
                             <constraint firstItem="PEd-Jg-bvS" firstAttribute="top" secondItem="Yqb-tD-aL8" secondAttribute="bottom" constant="8" symbolic="YES" id="wJV-r5-e32"/>
-                            <constraint firstItem="BWH-Z0-4SE" firstAttribute="top" secondItem="k3K-C0-bcH" secondAttribute="bottom" constant="8" symbolic="YES" id="ycn-4u-t9l"/>
+                            <constraint firstItem="k3K-C0-bcH" firstAttribute="top" secondItem="0pu-UI-CVB" secondAttribute="top" id="xak-fG-kWm"/>
+                            <constraint firstItem="k3K-C0-bcH" firstAttribute="trailing" secondItem="qze-VG-C89" secondAttribute="trailing" id="yku-Ax-kAf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ztf-5V-kVj"/>
