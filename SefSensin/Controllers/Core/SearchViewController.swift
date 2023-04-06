@@ -71,21 +71,28 @@ class SearchViewController: UIViewController {
             filteredRecipes.shuffle()
             tableView.reloadData()
         case 1:
-            filteredRecipes = self.data.kitchens.flatMap({ $0.recipes }).filter { $0.foodName.contains("Salata")}
+            let keyword = ["Torta", "Tavuk", "Han", "Dana", "Köfte", "Bibim", "Roll", "Ali", "Tanj", "Kuzu", "Karides", "Tamele", "Tfaya"]
+            filteredRecipes = data.kitchens.flatMap({$0.recipes}).filter({ recipe in
+                return keyword.contains { keyword in
+                    recipe.foodName.range(of: keyword, options: .caseInsensitive) != nil
+                }
+            })
             tableView.reloadData()
-            searchBar.text = ""
         case 2:
-            filteredRecipes = self.data.kitchens.flatMap({$0.recipes}).filter {$0.foodName.contains("Pizza")}
-            searchBar.text = ""
+            let keyword = ["Ench", "Bri", "Pastilla", "Spring", "Calzone", "Laza", "Burri", "Focac", "Ravio", "Lahmacun", "Pizza", "Brioc","Tost", "Dump", "Mantı", "Kru"]
+            filteredRecipes = data.kitchens.flatMap({$0.recipes}).filter({ recipe in
+                return keyword.contains { keyword in
+                    recipe.foodName.range(of: keyword, options: .caseInsensitive) != nil
+                }
+            })
             tableView.reloadData()
         case 3:
-            let keywords = ["Kabak", "Tamale", "İmam", "Okono", "Kimc", "Lahana"]
+            let keywords = ["Kabak", "Brus", "İmam", "Okono", "Kimc", "Lahana", "Kinoko", "Yaprak", "Ramen", "Cous", "Salata", "Kimchi", "Tteok", "Maako"]
             filteredRecipes = data.kitchens.flatMap({$0.recipes}).filter { recipe in
                 return keywords.contains { keyword in
                     recipe.foodName.range(of: keyword, options: .caseInsensitive) != nil
                 }
             }
-            searchBar.text = ""
             tableView.reloadData()
         case 4:
             let keywords = ["Chebekia","Kurabiye","Çikolata","Tatin","Creme", "Sfenj"]
@@ -94,7 +101,6 @@ class SearchViewController: UIViewController {
                     recipe.foodName.range(of: keyword, options: .caseInsensitive) != nil
                 }
             })
-            searchBar.text = ""
             tableView.reloadData()
         case 5:
             let keywords = ["Çorba", "Ribol"]
@@ -103,7 +109,6 @@ class SearchViewController: UIViewController {
                     recipe.foodName.range(of: keyword, options: .caseInsensitive) != nil
                 }
             })
-            searchBar.text = ""
             tableView.reloadData()
         default:
             break
@@ -159,14 +164,6 @@ extension SearchViewController: UISearchBarDelegate {
 
         tableView.reloadData()
     }
-
-//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-//        searchBar.text = ""
-//        filteredRecipes = data.kitchens.flatMap({$0.recipes})
-//        filteredRecipes.shuffle()
-//        tableView.reloadData()
-//        segmentedControl.selectedSegmentIndex = 0
-//    }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()

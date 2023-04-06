@@ -36,6 +36,6 @@ class SearchTableViewCell: UITableViewCell {
         searchFoodNameLabel.text = model.foodName
         searchFoodImage.setImage(with: model.foodImage)
         minLabel.text = model.cookingTime
-        kcalLabel.text = "\(model.calories)"
+        kcalLabel.text = "\(model.calories) Kcal"
     }  
 }
