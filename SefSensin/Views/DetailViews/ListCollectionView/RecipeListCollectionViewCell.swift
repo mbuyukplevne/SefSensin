@@ -33,7 +33,7 @@ class RecipeListCollectionViewCell: UICollectionViewCell {
     
     // MARK: - RecipeListViewController Config
     public func configure(model: Recipe) {
-        foodImage.setImage(with: model.foodImage)
+        foodImage.setImage(with: model.foodDetailImage)
         foodName.text = model.foodName
         minLabel.text = model.cookingTime
         kcalLabel.text = "\(model.calories) Kcal"

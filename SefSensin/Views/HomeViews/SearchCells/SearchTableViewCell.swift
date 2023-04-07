@@ -34,7 +34,7 @@ class SearchTableViewCell: UITableViewCell {
     // MARK: Search View Controller Configure
     public func configure(model: Recipe) {
         searchFoodNameLabel.text = model.foodName
-        searchFoodImage.setImage(with: model.foodImage)
+        searchFoodImage.setImage(with: model.foodDetailImage)
         minLabel.text = model.cookingTime
         kcalLabel.text = "\(model.calories) Kcal"
     }  
